@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="styles.css" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Navigation menu -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Savannah Taverner's React Native Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#figma-designs">Figma Designs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Introduction section -->
+  <section id="introduction" class="py-5 bg-primary text-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="display-4">About Me</h2>
+          <p class="lead">Hi! My name is Savannah Taverner and I'm a student at the University of Central Florida!
+            I am majoring in Digital Media with a track in Web Design, and will soon become a web designer after I
+            graduate in the spring of 2025. I have always loved art and working with computers, so I figured web design
+            was the perfect combination of the two. This portfolio showcases my React and React Native projects and
+            Figma designs that I've created while taking my Mobile Development course, DIG 4639C.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects section -->
+  <section id="projects" class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center mb-5">
+          <h2 class="display-4">Projects</h2>
+          <p class="lead">Check out some of my recent projects.</p>
+        </div>
+      </div>
+
+      <!-- TODO App -->
+      <div class="project mb-5">
+        <h3>TODO App</h3>
+        <p>The purpose of this project was to create a TODO application using React Native. The application allows users
+            to manage their tasks effectively by providing features such as task listing, task completion, and task addition,
+            as well as having the ability to login or register for an account.</p>
+
+        <p>The specific skills and technologies I utilized were React Native for building cross-platform mobile applications,
+            AsyncStorage for local data storage, and various components from the React Native Elements library for UI elements.</p>  
+            
+        <p>One challenge I faced during development was managing asynchronous operations, such as fetching data from AsyncStorage
+            and handling user interactions, in a synchronous and predictable manner. Asynchronous operations can introduce
+            complexities, especially when dealing with state management and ensuring data consistency.</p>  
+            
+        <p>To overcome this challenge, I leveraged React Native's built-in asynchronous features, such as async/await syntax and
+            the use of promises, to manage asynchronous tasks effectively. By structuring my code to handle asynchronous operations
+            asynchronously and using error handling mechanisms, I ensured that the application remains responsive and robust even
+            during data fetching and processing. Additionally, I adopted a modular and encapsulated approach to state management,
+            using the useState and useEffect hooks provided by React Native. This allowed me to separate concerns and manage state
+            changes in a clear and organized manner, reducing the likelihood of race conditions or data inconsistencies.</p>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/BFtHsj9cUIg" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <!-- Exercise App -->
+      <div class="project mb-5">
+        <h3>Exercise App</h3>
+        <p>The purpose of this project was to create an Exercise application using React. The application includes a menu with four
+            different exercise options to choose from in which the user can either record laps with a timer or increase their rep count.</p>  
+
+        <p>The specific skills and technologies I utilized were React for building the user interface components, useState and useCallback
+            hooks for managing state and handling user interactions, and CSS for styling the components.</p>  
+            
+        <p>A problem I encountered during development was efficiently managing the state and transitions between different screens of the
+            application. I addressed this issue by carefully designing the state management logic and using conditional rendering to switch
+            between the menu screen and the exercise screen based on user interactions</p>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/Riu_RBijhhc" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <!-- Quiz App -->
+      <div class="project mb-5">
+        <h3>Quiz App</h3>
+        <p>The purpose of this project was to create a quiz application using React Native. The application allows users to answer a series
+            of questions presented in various formats, including multiple-choice, multiple-answer, and true-false questions.</p>  
+
+        <p>The specific skills and technologies I utilized were React Native for building the user interface components, useState and
+            useEffect hooks for managing state and handling user interactions, and AsyncStorage for storing user responses locally on
+            the device.</p>  
+            
+        <p>One challenge I encountered during development was accurately tracking and recording user responses for each question. Given
+            the different question types and the need to handle both single and multiple correct answers, ensuring the correctness of
+            user responses and calculating the final score presented a significant challenge. To address this challenge, I implemented
+            a function to calculate whether the user's selected choices matched the correct answers for each question. By carefully
+            comparing the user's selections with the correct answers and considering the question type, I was able to accurately determine
+            the user's performance for each question and calculate the total score </p>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/uDbXhwnuMdM" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Figma Designs section -->
+  <section id="figma-designs" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center mb-5">
+          <h2 class="display-4">Figma Designs</h2>
+          <p class="lead">Take a look at my Figma design projects.</p>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Exercise App Design -->
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Exercise App Design</h3>
+              <p class="card-text">The Figma design for the Exercise app includes a main screen with options for Push Ups, Running, and Plank, with
+                an additional option for Exercise Type. Upon selection, users can access Duration or Repetition Exercise screens, featuring
+                intuitive controls and the exercise name. Navigation options allow returning to the main screen. The Exercise Type menu
+                categorizes exercises into Duration, Repetition, Resistance, and Biking, with added screens for Resistance Training and
+                Biking. In Resistance Training, users can adjust rep count and input weight. The Biking Screen allows editing routes,
+                tracking distance, and pausing the timer.</p>
+              <div class="figma-embed-container">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F4TKkuUyMcQJytqnIaPO6uo%2FExercise-App-Design%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DHdZh4oDeb48Nqtzz-1" allowfullscreen></iframe>            
+              </div>
+            </div>
+        </div>
+        </div>
+        <!-- TODO App Design -->
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">TODO App Design</h3>
+              <p class="card-text">The Figma design for the TODO app features a modern interface with a login screen for user authentication.
+                Once logged in, users can create tasks with descriptions and deadlines, manage their task list, mark tasks as completed, and
+                delete tasks as needed. The task list displays task descriptions, deadlines, and completion status, while completed tasks are
+                clearly marked and separated from the incompleted ones. The design includes intuitive navigation and clear indications of
+                different app states for a seamless user experience on a prototypical modern smartphone interface.</p>
+              <div class="figma-embed-container">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F3CLUnUCxmBJf7qStZiIZ5x%2FTODO-App%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DcTu4bjwdttyg9hD4-1" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Flash Card App -->
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Flash Card App Design</h3>
+              <p class="card-text">The Figma design for the Flash Card app presents a user-friendly interface optimized for studying. Users
+                can effortlessly create, edit, and delete flashcards, with each card displaying a prompt and an answer. Navigation between
+                flashcards is smooth, and users can shuffle the order of cards for varied study sessions.</p>
+              <div class="figma-embed-container">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F9e6U1FNMPWwqFwHohwlyeA%2FFlash-Card-App%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3D4okrWzYbkXx2UFhq-1" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section id="contact" class="py-5 bg-dark text-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center mb-5">
+          <h2 class="display-4">Contact Me</h2>
+          <p class="lead">Feel free to reach out to me via email or connect with me on LinkedIn.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <ul class="list-unstyled text-center">
+            <li>Email: savannahtaverner@hotmail.com</li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/savannahtaverner">Savannah Taverner</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
